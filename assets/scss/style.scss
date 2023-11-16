@@ -1,0 +1,84 @@
+$-color-primary: #c69963;
+
+
+@import '_sidebar.scss';
+@import '_main.scss';
+@import '_customers.scss';
+@import '_booking.scss';
+@import '_footer.scss';
+@import '_gallery.scss';
+@import '_realtors.scss';
+
+
+
+//responsive break points 
+// 75em = 1200px
+// 65em = 1000px
+// 50em = 800px
+// 37.5em = 600px
+   
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, 
+*::after  {
+  box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: 75em) {
+        font-size: 48%;
+    }
+
+   
+
+
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts//Roboto-Regular.ttf);
+    font-weight: 900;
+}
+
+
+body {
+    font-family: Roboto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 70vh 40vw repeat(3, min-content);
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: 62.5em) {
+        grid-template-rows: 7rem 70vh 40vw repeat(3, min-content);
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: 50em) {
+        grid-template-rows: 7rem 60vh repeat(2, min-content);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

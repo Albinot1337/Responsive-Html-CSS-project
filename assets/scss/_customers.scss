@@ -1,0 +1,142 @@
+.customers {
+    
+    grid-column: full-start / full-end;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media only screen and (max-width: 50em) {
+        grid-template-columns: 1fr;
+        // height: 60%;
+        
+    }
+    
+    .customers-story {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        align-items: center;
+        background-image: url(../img/mountain.jpg);
+        background-size: cover;
+        background-position: center;
+
+        @media only screen and (max-width: 50em) {
+            grid-template-columns: repeat(5, 1fr );
+            
+         }
+
+    }
+
+    
+
+    .story-1 {
+        width: 100%;
+        height: 100%;
+        
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+        display: block;
+
+        @media only screen and (max-width: 50em) {
+            width: 60%;
+                 
+         }
+
+
+    }
+
+    .story-2 {
+        width: 120%;
+        height: 70%;
+        grid-row: 3 / 7;
+        grid-column: 4 / 7;
+        display: block;
+        z-index: 1;
+
+        @media only screen and (max-width: 50em) {
+            width: 100%;
+            grid-column: 3 / 5;
+                 
+         }
+        
+    }
+
+    .customer-story-1 {
+        background-color: #f9f7f6;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 50em) {
+           grid-row: 1 / 2;  
+           padding: 6rem;          
+        }
+
+        @media only screen and (max-width: 37em) {
+            grid-row: 1 / 2;  
+            padding: 4rem 2rem 4rem 2rem;          
+         }
+ 
+
+
+
+
+        .heading-tertiary {
+            font-size: 1.6rem;
+            color: $-color-primary;
+            text-transform: uppercase;
+            padding-bottom: 1.6rem;
+            // transition: all .4s;
+
+            // &:hover {
+            //     transform: skewX(10deg) skewY(5deg) scale(1.1);
+            // }
+        }
+
+        .story-title {
+            color: #54483a;
+            font-size: 3.6rem;
+            font-style: italic;
+            padding-bottom: 3rem;
+
+            @media only screen and (max-width: 50em) {
+                font-size: 3rem;     
+             }
+        }
+
+        .story-text {
+            font-size: 1.4rem;
+            font-style: italic;
+            line-height: 1.7;
+            color: #6d5d4b;
+            padding-bottom: 2.4rem;
+
+            @media only screen and (max-width: 50em) {
+                font-size: 1.2rem;       
+             }
+        }
+
+        .story-btn {
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            font-style: italic;
+            color: #fff;
+            background-color: #c69963;
+            padding: 1.2rem 3.6rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            justify-self: start;
+            margin-bottom: 3rem;
+
+            &:hover {
+                font-style: normal;
+                color: #b0895a;
+                background-color: #fff;
+                box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+            }
+
+        }
+        
+    }
+}

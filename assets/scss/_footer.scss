@@ -1,0 +1,52 @@
+.footer {
+    background-color: #101d2c;
+    grid-column: full-start / full-end;
+
+    padding: 8rem;
+
+   
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+            justify-content: center;
+        grid-gap: 2rem;
+
+        @media only screen and (max-width: 50em) {
+            grid-template-columns: repeat(3, max-content);
+           }
+
+           @media only screen and (max-width: 37em) {
+            grid-template-columns: repeat(2, max-content);
+           }
+
+        .link:link,
+        .link:visited {
+            font-size: 1.4rem;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1.5rem;
+            text-align: center;
+            display: block;
+            transition: all 0.3s;
+
+            &:hover,
+            &:active {
+                background-color: rgba(#fff, 0.1);
+                transform: translateY(- 5px);
+            }
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: #aaa;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
