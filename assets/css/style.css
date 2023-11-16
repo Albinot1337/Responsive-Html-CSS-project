@@ -179,7 +179,7 @@
   align-items: center;
   justify-items: center;
   justify-content: center;
-  grid-column-gap: 4rem;
+  grid-column-gap: 3.5rem;
 }
 .main .logos .logo-1 {
   display: inline-block;
