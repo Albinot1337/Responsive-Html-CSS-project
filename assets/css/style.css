@@ -51,6 +51,7 @@
 .main {
   background-color: green;
   grid-column: full-start/col-end 6;
+  background-image: linear-gradient(to right top, rgba(18, 33, 50, 0.8), rgba(15, 29, 46, 0.8)), url(../img/background.jpg);
   background-size: cover;
   background-position: center;
   padding: 4rem 8rem 8rem 8rem;
