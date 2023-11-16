@@ -320,7 +320,7 @@
 @media only screen and (max-width: 37.5em) {
   .booking {
     grid-template-columns: minmax(min-content, max-content);
-    padding: 0 6rem;
+    padding: 0 4.5rem;
   }
 }
 .booking__section {
