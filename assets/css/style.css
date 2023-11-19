@@ -477,7 +477,7 @@
 .gallery {
   grid-column: full-start/full-end;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(7, 5vw);
   grid-gap: 1.5rem;
   padding: 1.5rem;
